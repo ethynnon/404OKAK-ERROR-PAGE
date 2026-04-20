@@ -165,6 +165,26 @@ body, .container, .top-left, .bottom-right, .bottom-left {
         align-items: center;
         padding-bottom: 0px;
         overflow-x: hidden;
-        display: flex;
+    }
+}
+
+@media (min-width: 501px) {
+    .top-left h1 {
+        font-size: 8rem;
+    }
+    .top-left h2 {
+        font-size: 1.3rem;
+        max-width: 45vw;
+    }
+    .top-left {
+        top: 60px;
+        left: 60px;
+        z-index: 10;
+    }
+}
+
+@media (min-width: 501px) {
+    .bottom-right {
+        width: clamp(300px, 45vw, 650px);
     }
 }
